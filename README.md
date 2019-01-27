@@ -27,6 +27,15 @@ Testing
 
     $ nosetests
 
+Dockerization
+-------------
+
+run ./build-docker to create a docker run container to isolate the python dependencies from your machine.  Run it via
+
+    $ docker run chinenual/audio-offset-finder --rm -v "$PWD:/data" --find-offset-of /data/snippet.mp3 --within /data/audio.mp3
+
+Adjust -v to match whereever your source audio files live.
+
 Licensing terms and authorship
 ------------------------------
 
